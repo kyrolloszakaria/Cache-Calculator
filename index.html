@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cache Calculator</title>
+  <script>
+    function calculateValues() {
+      // Retrieve input values
+      var wordSize = parseInt(document.getElementById('wordSize').value);
+      var memCap = parseInt(document.getElementById('memCap').value);
+      var cacheCap = parseInt(document.getElementById('cacheCap').value);
+      var memBlocks = parseInt(document.getElementById('memBlocks').value);
+      var cacheLines = parseInt(document.getElementById('cacheLines').value);
+      var blockSize = parseInt(document.getElementById('blockSize').value);
+      var setNumber = parseInt(document.getElementById('setNumber').value);
+      var setSize = parseInt(document.getElementById('setSize').value);
+      var tagBits = parseInt(document.getElementById('tagBits').value);
+      var indexBits = parseInt(document.getElementById('indexBits').value);
+      var offsetBits = parseInt(document.getElementById('offsetBits').value);
+      
+      // Perform calculations
+      // ...
+      // Add your calculation logic here
+      
+      // Display the results
+      // ...
+      // Add code to display the calculated values to the user
+    }
+  </script>
+</head>
+<body>
+  <h1>Cache Calculator</h1>
+  <form onsubmit="event.preventDefault(); calculateValues();">
+    <label for="wordSize">Word Size:</label>
+    <input type="number" id="wordSize" required><br>
+    
+    <label for="memCap">Memory Capacity:</label>
+    <input type="number" id="memCap" required><br>
+    
+    <label for="cacheCap">Cache Capacity:</label>
+    <input type="number" id="cacheCap" required><br>
+    
+    <label for="memBlocks">Memory Blocks:</label>
+    <input type="number" id="memBlocks" required><br>
+    
+    <label for="cacheLines">Cache Lines:</label>
+    <input type="number" id="cacheLines" required><br>
+    
+    <label for="blockSize">Block Size:</label>
+    <input type="number" id="blockSize" required><br>
+    
+    <label for="setNumber">Set Number:</label>
+    <input type="number" id="setNumber" required><br>
+    
+    <label for="setSize">Set Size:</label>
+    <input type="number" id="setSize" required><br>
+    
+    <label for="tagBits">Tag Bits:</label>
+    <input type="number" id="tagBits" required><br>
+    
+    <label for="indexBits">Index Bits:</label>
+    <input type="number" id="indexBits" required><br>
+    
+    <label for="offsetBits">Offset Bits:</label>
+    <input type="number" id="offsetBits" required><br>
+    
+    <button type="submit">Calculate</button>
+  </form>
+</body>
+</html>
